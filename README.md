@@ -1,30 +1,28 @@
 # Host MTA-STS policy with GitHub Pages
 
----
+## Instructions
 
-### 1. Create repository
+### Create repository
 
 * Open **[egor-kouchnarev/mta-sts](https://github.com/egor-kouchnarev/mta-sts)** and select **Create a new repository** from the **Use this template** dropdown on the top right.
 * Enter a **name**, and leave visibility as **Public** (GitHub Pages is only available in public repositories with GitHub Free and GitHub Free for organisations plans).
 * Click **Create Repository**.
 
-### 2. Host repository
+### Host repository
 
 * Open **Settings**, then, in the left select **Pages** (under **Code and automation**).
 * Select **Main** from the dropdown list under **Branch**.
 * Click **Save**.
 
-### 3. Publish DNS records
+### Publish DNS records
 
 * `mta-sts.<EXAMPLE.TEST>.	300	IN	CNAME	<GITHUB-USERNAME>.github.io.`
 * `_mta-sts.<EXAMPLE.TEST>. 300	IN	TXT	"v=STSv1; id=<UNIQUE-IDENTIFIER>"`
 
-### 4. Configure custom domain and TLS
+### Configure custom domain and TLS
  
 * Enter *mta-sts.<domain>* in the **Custom Domain** field.
 * Once the **DNS Check** completes, Select **Enforce HTTPS**.
-
----
 
 ## References
 
