@@ -5,12 +5,12 @@
 ### Create repository
 
 * Open **[egor-kouchnarev/mta-sts](https://github.com/egor-kouchnarev/mta-sts)** and select **Create a new repository** from the **Use this template** dropdown on the top right.
-* Enter a **name**, and leave visibility as **Public** (GitHub Pages is only available in public repositories with GitHub Free and GitHub Free for organisations plans).
+* Enter a **name**, and leave visibility as **Public**(GitHub Pages is only available in public repositories on Free plans).
 * Click **Create Repository**.
 
 ### Host repository
 
-* Open **Settings**, then, in the left select **Pages** (under **Code and automation**).
+* In repository **Settings**, click **Pages** (under **Code and automation** in the left menu).
 * Select **Main** from the dropdown list under **Branch**.
 * Click **Save**.
 
@@ -19,10 +19,10 @@
 * `mta-sts.<EXAMPLE.TEST>.	300	IN	CNAME	<GITHUB-USERNAME>.github.io.`
 * `_mta-sts.<EXAMPLE.TEST>. 300	IN	TXT	"v=STSv1; id=<UNIQUE-IDENTIFIER>"`
 
-### Configure custom domain and TLS
+### Enable custom domain
  
-* Enter *mta-sts.<domain>* in the **Custom Domain** field.
-* Once the **DNS Check** completes, Select **Enforce HTTPS**.
+* Enter *mta-sts.<EXAMPLE.TEST>* in the **Custom Domain** field.
+* When the **DNS Check** has completed, select **Enforce HTTPS**.
 
 ## References
 
