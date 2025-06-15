@@ -6,29 +6,30 @@ Donec eget nisi ac sapien cursus maximus. Nullam id placerat sem. Fusce sed mi m
 
 ### Create repository
 
-1. Create a new repository from the [github.com/egor-kouchnarev/mta-sts](https://github.com/egor-kouchnarev/mta-sts) template
-2. Enter a repository name, and Set visibility to **Public** if using Free GitHub plan
-3. Edit the *./well-known/mta-sts.txt* policy file to reflect your configuration
+1. Open [egor-kouchnarev/mta-sts](https://github.com/egor-kouchnarev/mta-sts), and select **Create a new repository** from the **Use this template** dropdown on the top right.
+2. Enter a **name**, and leave visibility as **Public** (GitHub Pages is available in public repositories with GitHub Free and GitHub Free for organisations).
+3. Click **Create Repository**.
 
 ### Host repository
 
-4. Open **Settings**, then, in the side menu select **Pages** (under **Code and automation**)
-5. Select **Main** from the drop-down list under **Branch**, then click **Save**
+4. Open **Settings**, then, in the left select **Pages** (under **Code and automation**).
+5. Select **Main** from the drop-down list under **Branch**.
+6. Click **Save**.
 
 ### Publish DNS records
 
-7. `mta-sts.<domain>.	300	IN	CNAME	<github-account-name>.github.io.`
-8. `_mta-sts.kouchnarev.com. 300	IN	TXT	"v=STSv1; id=<unique-identifier>"`
+7. `mta-sts.<EXAMPLE.TEST>.	300	IN	CNAME	<GITHUB-USERNAME>.github.io.`
+8. `_mta-sts.<EXAMPLE.TEST>. 300	IN	TXT	"v=STSv1; id=<UNIQUE-IDENTIFIER>"`
 
 ### Configure custom domain and TLS
  
-9. Enter *mta-sts.<domain>* in the **Custom Domain** field
-10. Once the **DNS Check** completes, Check **Enforce HTTPS**
+9. Enter *mta-sts.<domain>* in the **Custom Domain** field.
+10. Once the **DNS Check** completes, Select **Enforce HTTPS**.
 
 ### Verify
 
-* `curl "https://mta-sts.<domain>/.well-known/mta-sts.txt"`
-* `dig _mta-sts.<domain> txt`
+* `curl "https://mta-sts.<EXAMPLE.TEST>/.well-known/mta-sts.txt"`
+* `dig _mta-sts.<EXAMPLE.TEST> txt`
 
 ## References
 
