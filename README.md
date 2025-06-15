@@ -1,15 +1,13 @@
-## Hosted MTA-STS policy with GitHub Pages
+## Host MTA-STS policy with GitHub Pages
 
 Donec eget nisi ac sapien cursus maximus. Nullam id placerat sem. Fusce sed mi maximus, aliquam libero quis, viverra tortor. Vivamus laoreet nisi a velit condimentum viverra. Vivamus malesuada convallis enim, eu fringilla ipsum dignissim vitae. In hac habitasse platea dictumst. Duis elementum scelerisque arcu, eget iaculis nisl posuere ac.
 
 ---
 
-### Steps
-
 #### Create repository
 
-* Open [egor-kouchnarev/mta-sts](https://github.com/egor-kouchnarev/mta-sts), and select **Create a new repository** from the **Use this template** dropdown on the top right.
-* Enter a **name**, and leave visibility as **Public** (GitHub Pages is available in public repositories with GitHub Free and GitHub Free for organisations).
+* Open **[egor-kouchnarev/mta-sts](https://github.com/egor-kouchnarev/mta-sts)**, and select **Create a new repository** from the **Use this template** dropdown on the top right.
+* Enter a **name**, and leave visibility as **Public** (GitHub Pages is only available in public repositories with GitHub Free and GitHub Free for organisations plans).
 * Click **Create Repository**.
 
 #### Host repository
@@ -44,4 +42,5 @@ Donec eget nisi ac sapien cursus maximus. Nullam id placerat sem. Fusce sed mi m
   *  https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages
   * https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https
   *  https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits
-* https://datatracker.ietf.org/doc/html/rfc8461 https://datatracker.ietf.org/doc/html/rfc8461#section-8.2
+* https://datatracker.ietf.org/doc/html/rfc8461 
+  * https://datatracker.ietf.org/doc/html/rfc8461#section-8.2
